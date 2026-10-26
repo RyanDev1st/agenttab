@@ -1,0 +1,14 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+.circle
+recovery_file*
+broadcast
+contracts/out
+contracts/cache
+traces.jsonl
+console.jsonl
+mainnet-run.dry-run.json
+.arc-studio/
