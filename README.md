@@ -4,6 +4,17 @@ Prepaid USDC tabs so an AI agent can pay an API per call on Arc, without sending
 
 Built with [Arc Studio](https://studio.arc.io)
 
+Live app: https://ryandev1st.github.io/agenttab/
+
+## Live on Arc Mainnet
+
+- Contract: [`0x901512103E37AD05ce803AbCF1028a643D0C5838`](https://explorer.arc.io/address/0x901512103e37ad05ce803abcf1028a643d0c5838)
+- Open a 0.10 USDC tab: [`0x6e98ee62...`](https://explorer.arc.io/tx/0x6e98ee6244cc50d3e994e40b9f14a3fa9690e1acc3f4eaa4ad924374aaf4209d)
+- Redeem 0.03 USDC after three paid calls: [`0xc4624919...`](https://explorer.arc.io/tx/0xc46249195e4482e15d1e545d7afc6bb704d2ac266966651d79b24a2b09970602)
+- Settle at 0.05 USDC, close early and refund 0.05 USDC: [`0xb2d59862...`](https://explorer.arc.io/tx/0xb2d598628b0e07421c6581db17d3edf3af5973156aa81f44f684b07bdcc4fe13)
+
+Every transaction from the run is in `mainnet-run.json`. These are small demo amounts between two wallets owned by the builder, not customer payments.
+
 ## What you can do
 
 - Switch between Arc Mainnet and Arc Testnet from the header. Mainnet is the default once its contract address is configured, otherwise the app opens on Testnet.
@@ -19,7 +30,7 @@ The "voucher inbox" is a demo stand-in for an HTTP 402 / payment header. In a re
 
 ## Networks and configuration
 
-All per-network settings live in `src/config/networks.ts`: the AgentTab address, the USDC address and the explorer. The Arc Mainnet AgentTab address is a marked placeholder (`AGENT_TAB_MAINNET_ADDRESS`). Until you replace it, mainnet transactions are disabled in the app.
+All per-network settings live in `src/config/networks.ts`: the AgentTab address, the USDC address and the explorer. To use your own mainnet deployment, change `AGENT_TAB_MAINNET_ADDRESS`. If it is the zero address, mainnet transactions are disabled in the app.
 
 ## Tech stack
 

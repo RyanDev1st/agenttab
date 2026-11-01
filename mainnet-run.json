@@ -1,0 +1,66 @@
+{
+  "mode": "live",
+  "network": "Arc",
+  "chainId": 5042,
+  "startedAt": "2026-11-01T09:47:55.488Z",
+  "finishedAt": "2026-11-01T09:48:16.864Z",
+  "contract": {
+    "address": "0x901512103e37ad05ce803abcf1028a643d0c5838",
+    "explorer": "https://explorer.arc.io/address/0x901512103e37ad05ce803abcf1028a643d0c5838",
+    "deployedThisRun": true
+  },
+  "tabId": "1",
+  "addresses": {
+    "agent": "0x2A63129B039eE8bfb313586c2330Fc4774FcA011",
+    "provider": "0xE3Ed6a1b82a157F45F4Bd19d4bD22316E7C381D7"
+  },
+  "usdcMovedToProvider": {
+    "gasTopUp": "0.2",
+    "paidForCalls": "0.05"
+  },
+  "balances": {
+    "agentBefore": "2",
+    "agentAfter": "1.707779",
+    "providerBefore": "0",
+    "providerAfter": "0.244806"
+  },
+  "transactions": [
+    {
+      "step": "Deploy AgentTab",
+      "hash": "0x388737dd157bc4ffc33e435523b92c1dfc09694d1688a755bf4856b0deeac05a",
+      "explorer": "https://explorer.arc.io/tx/0x388737dd157bc4ffc33e435523b92c1dfc09694d1688a755bf4856b0deeac05a",
+      "gasUsed": "1368922"
+    },
+    {
+      "step": "Agent sends provider 0.2 USDC for gas (native transfer)",
+      "hash": "0xa984bab0805c8d8c5580bb37671352291a9951cb0357e89c8f015a01ae26f3e6",
+      "explorer": "https://explorer.arc.io/tx/0xa984bab0805c8d8c5580bb37671352291a9951cb0357e89c8f015a01ae26f3e6",
+      "gasUsed": "21000"
+    },
+    {
+      "step": "Agent approves 0.1 USDC",
+      "hash": "0x1878f6bf23c38097b4a3f7119e8d89fca2881f16af6ffab09623ec3f1c5bb8a2",
+      "explorer": "https://explorer.arc.io/tx/0x1878f6bf23c38097b4a3f7119e8d89fca2881f16af6ffab09623ec3f1c5bb8a2",
+      "gasUsed": "55438"
+    },
+    {
+      "step": "Agent opens tab for provider: 0.1 USDC, expires in 1 hour",
+      "hash": "0x6e98ee6244cc50d3e994e40b9f14a3fa9690e1acc3f4eaa4ad924374aaf4209d",
+      "explorer": "https://explorer.arc.io/tx/0x6e98ee6244cc50d3e994e40b9f14a3fa9690e1acc3f4eaa4ad924374aaf4209d",
+      "gasUsed": "243476"
+    },
+    {
+      "step": "Provider redeems 0.03 USDC",
+      "hash": "0xc46249195e4482e15d1e545d7afc6bb704d2ac266966651d79b24a2b09970602",
+      "explorer": "https://explorer.arc.io/tx/0xc46249195e4482e15d1e545d7afc6bb704d2ac266966651d79b24a2b09970602",
+      "gasUsed": "94117"
+    },
+    {
+      "step": "Provider settles 0.05 USDC and closes the tab",
+      "hash": "0xb2d598628b0e07421c6581db17d3edf3af5973156aa81f44f684b07bdcc4fe13",
+      "explorer": "https://explorer.arc.io/tx/0xb2d598628b0e07421c6581db17d3edf3af5973156aa81f44f684b07bdcc4fe13",
+      "gasUsed": "113641"
+    }
+  ],
+  "notes": []
+}

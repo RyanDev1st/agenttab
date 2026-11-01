@@ -14,11 +14,11 @@ type ArcChain = typeof arc | typeof arcTestnet
 const ZERO_ADDRESS: Address = '0x0000000000000000000000000000000000000000'
 
 /**
- * >>> TODO (MAINNET): replace this placeholder with your deployed AgentTab address on Arc Mainnet. <<<
- * While it is the zero address, the app treats Arc Mainnet as "not configured",
+ * Deployed on Arc Mainnet by scripts/mainnet-demo.ts (see mainnet-run.json).
+ * If this is ever the zero address, the app treats Arc Mainnet as "not configured",
  * defaults to Arc Testnet, and blocks mainnet transactions.
  */
-export const AGENT_TAB_MAINNET_ADDRESS: Address = ZERO_ADDRESS
+export const AGENT_TAB_MAINNET_ADDRESS: Address = '0x901512103E37AD05ce803AbCF1028a643D0C5838'
 
 /** Deployed on Arc Testnet by Arc Studio. */
 export const AGENT_TAB_TESTNET_ADDRESS: Address = '0xe2f9d4a4a498bee2df6f9ed25ba31ff96094e378'
